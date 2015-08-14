@@ -1,10 +1,9 @@
 require 'sinatra/base'
 
-#models
-require './models/ResponsesModel'
-
 #controllers
 require './controllers/ApplicationController'
 require './controllers/HomeController'
+#models
+require './models/ResponsesModel'
 
 map('/') { run HomeController }
